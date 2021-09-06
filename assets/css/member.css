@@ -1,0 +1,54 @@
+html{
+    text-transform: uppercase;
+}
+
+img{
+    width: 100%;
+}
+
+
+.content{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member__heading{
+    font-family: 'Lobster', cursive;
+    padding: 90px 40px;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.member-info__name{
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+    line-height: 80px;
+}
+
+.member-info{   
+    padding-top: 200px;
+    text-align: center;
+}
+
+.member-info__img{
+    max-width: 500px ;
+    border: 2px solid var(--primary-color);
+}
+
+.member-info__desc{
+    line-height: 2;
+}
+
+.member-info__desc li{
+    font-family: 'DM Serif Text', cursive;
+}
+
+.member-info__link{
+    color: var(--secondary-color);
+}
+
+.member-info__link:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,196 @@
+.main {
+  background-color: var(--black-color);
+  min-height: 1000px;
+}
+
+.explanation {
+  font-size: 11px;
+  background-color: var(--primary-color);
+  min-height: 47px;
+  text-align: center;
+  line-height: 47px;
+  margin: 2px;
+}
+
+.container {
+  border: 10px solid var(--secondary-color);
+}
+
+/* Header  */
+
+.header-wrapper {
+  width: calc(100% - 20px);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  position: relative;
+  font-size: 16px;
+  background-color: var(--black-color);
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header__logo-spin{
+  position: absolute;
+  top: 0;
+  right: 240px;
+  width: 82px;
+  height: 82px;
+  background-color: #fff;
+  background-image: url('../img/blackpink-logo1.jpeg');
+  background-size: 100%;
+  animation: spinLogo linear 6s infinite;
+  border-radius: 100px;
+  border: 4px solid var(--primary-color);
+
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+}
+
+.header__nav--title {
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+.header__logo {
+    margin-right: 343px;
+    width: 277px;
+    height: 80px;
+}
+
+.header__logo:hover{
+  opacity: 0.8;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__buy-btn {
+  min-width: 37px;
+  min-height: 45px;
+}
+
+.header__buy-btn i {
+  font-size: 30px;
+  margin-top: 16px;
+  margin-left: 30px;
+}
+
+.header__nav--object-list {
+  position: absolute;
+  min-width: 250px;
+  background-color: var(--black-color);
+  box-shadow: 0 0 3px var(--primary-color);
+  border-radius: 4px;
+  display: none;
+  animation: fadeIn ease 0.5s;
+  transform-origin: top left;
+}
+
+.header__nav--object-list-arrow {
+  position: absolute;
+  border: solid rgba(255, 184, 193, 0.5);
+  background-color: var(--black-color);
+  border-width: 0 1px 1px 0;
+  padding: 8px;
+  transform: rotate(-135deg);
+  top: -9px;
+  left: 30px;
+}
+
+.header__nav--object-item {
+  color: var(--primary-color);
+  padding: 0 16px;
+  font-size: 13px;
+}
+
+.header__nav--object-item:hover,
+.header__nav--object-list-arrow-help:hover
+  + .header__nav--object-list-arrow
+  + .header__nav--object-item {
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+}
+
+.header__nav--object-list-arrow-help:hover
+  + .header__nav--object-list-arrow
+  + .header__nav--object-item {
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+}
+
+.header__nav--object-list-arrow-help {
+  width: 250px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__nav--object-list-arrow-help:hover + .header__nav--object-list-arrow {
+  background-color: var(--primary-color);
+}
+
+.header__nav--has-item-list {
+  position: relative;
+}
+
+.header__nav--has-item-list:hover .header__nav--object-list {
+  display: block;
+}
+
+/* footer  */
+.social-logo{
+  font-size: 30px;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--primary-color);
+  margin: 140px auto 40px;
+}
+
+.copy-right{
+  font-size: 11px;
+  margin: 20px 0px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.aside-info{
+  font-size: 12px;
+  display: flex;
+  margin: 0 auto 40px;
+  color: var(--tertiary-color);
+  width: 646px;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+
+.aside-info__item{
+  cursor: pointer;
+}
+
+.aside-info__item + .aside-info__item{
+  border-left: 1px solid #939598;
+  padding-left: 14px;
+}
+
+.aside-info__item:hover{
+  opacity: 0.8;
+}
+
+
+
+
