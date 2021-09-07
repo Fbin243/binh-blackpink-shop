@@ -31,8 +31,7 @@ a{
 .products-list{
     display: flex;
     justify-content: space-evenly;
-    padding: 44px 8px;
-    flex-wrap: wrap;
+    padding: 44px 0px;
 }
 
 .products-list + .products-list{
